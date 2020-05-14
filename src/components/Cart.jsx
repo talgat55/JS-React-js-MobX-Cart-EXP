@@ -38,13 +38,13 @@ class Cart extends Component {
                                 </div>
                                 <div className="control">
                                     <span
-                                        onClick={this.removeFromCart(data.product_id)}
+                                        onClick={()=>this.removeFromCart(data.product_id)}
                                         className="btn btn-danger btn-xs cancel"
                                     >
                                         <i className="fa fa-times"/>
                                     </span>
                                     <span
-                                        onClick={this.increaseQuantityProduct(data.product_id)}
+                                        onClick={()=>this.increaseQuantityProduct(data.product_id)}
                                         className="btn btn-success btn-xs"
                                     >
                                         <i className="fa fa-plus"/>

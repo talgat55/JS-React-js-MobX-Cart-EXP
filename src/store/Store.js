@@ -5,28 +5,28 @@ class Store {
             name: 'Casual Wears',
             description: 'Comfy and unisex',
             price: 50,
-            image: require('../img/item1.jpg')
+            image: '../img/item1.jpg'
         },
         {
             id: 2,
             name: 'Corporate wears & bags',
             description: 'Stylish',
             price: 350,
-            image: require('../img/item2.jpg')
+            image: '../img/item2.jpg'
         },
         {
             id: 3,
             name: 'Tops and Blouses',
             description: 'Wonderfully fitted',
             price: 250,
-            image: require('../img/item3.jpg')
+            image: '../img/item3.jpg'
         },
         {
             id: 4,
             name: 'Tshirt sleeker',
             description: 'Wonderfully fitted',
             price: 250,
-            image: require('../img/item4.jpg')
+            image: '../img/item4.jpg'
         }
     ];
     carts = [];

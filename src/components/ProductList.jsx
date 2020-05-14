@@ -1,8 +1,8 @@
 import React from 'react';
 
-export default ({data, index,addToCart}) => {
+const ProductList =  ({data, addToCart}) => {
     return (
-        <div key={index} className="col-md-3 top-space">
+        <div className="col-md-3 top-space">
             <div className="card">
                 <img
                     className="card-img-top"
@@ -16,7 +16,7 @@ export default ({data, index,addToCart}) => {
                     <div className="detail">
                         <div className="price text-center">$ {data.price}</div>
                         <button
-                            onClick={addToCart(data.id)}
+                            onClick={ () => addToCart(data.id)}
                             className="btn btn-primary btn-sm"
                         >
                             Add to Cart
@@ -28,3 +28,4 @@ export default ({data, index,addToCart}) => {
         </div>
     )
 };
+export default  ProductList;

@@ -5,11 +5,19 @@ import ProductList from "@/components/ProductList";
 
 @inject('store')
 class Product extends Component{
+
+    constructor(props) {
+        super(props);
+        this.addToCart = this.addToCart.bind(this);
+    }
+
     //------
     //  Add to cart product by id
     //-----
     addToCart(id){
         this.props.store.addToCart(id);
+
+        console.log(id);
     }
 
     render() {
@@ -20,9 +28,10 @@ class Product extends Component{
                         {
                             this.props.store.products.map((data,index) =>(
                                 <ProductList
+                                    key={index}
                                     data={data}
                                     index={index}
-                                    addToCart={this.addToCart}
+                                    addToCart= {this.addToCart}
                                 />
                             ))
                         }
